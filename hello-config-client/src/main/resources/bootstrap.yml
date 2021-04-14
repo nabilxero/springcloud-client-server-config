@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: hello-service
+
+  profiles:
+    active: prod
+
+  cloud:
+    config:
+      uri: http://localhost:8888
+    bus:
+      enabled: true
+      refresh:
+        enabled: true
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
+

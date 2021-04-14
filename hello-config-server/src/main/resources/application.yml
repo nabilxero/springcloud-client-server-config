@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: hello-config-server
+  cloud:
+    config:
+      server:
+        git:
+#          uri: https://github.com/nabilxero/spring-cloud-config-server               [For remote repo]
+          uri: file:///E:\Self Development\Projects\Spring Boot\Spring Cloud\Spring Cloud- Client Server Configuration\config-properties
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+#  x
+server:
+  port: 8888
+
+
